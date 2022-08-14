@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660495486642" clover="3.2.0">
-  <project timestamp="1660495486642" name="All files">
+<coverage generated="1660511588473" clover="3.2.0">
+  <project timestamp="1660511588473" name="All files">
     <metrics statements="175" coveredstatements="175" conditionals="22" coveredconditionals="22" methods="14" coveredmethods="14" elements="211" coveredelements="211" complexity="0" loc="175" ncloc="175" packages="3" files="5" classes="5"/>
     <package name="actions.rail">
       <metrics statements="35" coveredstatements="35" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
