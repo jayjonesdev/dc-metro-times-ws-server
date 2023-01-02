@@ -7,8 +7,9 @@
     "start": "ts-node ./src/index.ts",
     "dev": "nodemon ./src/index.ts",
     "test": "jest --watchAll --detectOpenHandles",
-    "docker:build": "docker build -t dc-metro-times-ws-server .",
-    "docker:run": "docker run -d -p 7071:7071 dc-metro-times-ws-server"
+    "docker:build": "docker build -t 9029jonesj/dc-metro-times-ws-server:$npm_config_tag .",
+    "docker:run": "docker run -d -p 7071:7071 dc-metro-times-ws-server",
+    "docker:push": "docker push 9029jonesj/dc-metro-times-server:$npm_config_tag"
   },
   "author": "Jerrell Jones",
   "license": "GPL-3.0-or-later",
@@ -22,6 +23,7 @@
     "@types/jest": "^28.1.6",
     "@types/ws": "^8.5.3",
     "jest-websocket-mock": "^2.4.0",
+    "jest": "^28.1.0",
     "nodemon": "^2.0.19",
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
