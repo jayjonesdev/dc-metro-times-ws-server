@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "dev": "nodemon ./src/index.ts",
-    "test": "jest --watchAll --detectOpenHandles",
+    "test": "jest --detectOpenHandles",
+    "test-dev": "jest --watchAll --detectOpenHandles",
     "docker:build": "docker build -t 9029jonesj/dc-metro-times-ws-server:$npm_config_tag .",
     "docker:run": "docker run -d -p 7071:7071 dc-metro-times-ws-server",
     "docker:push": "docker push 9029jonesj/dc-metro-times-server:$npm_config_tag"
