@@ -17,8 +17,12 @@ describe('EventProcessor', () => {
     done();
   });
 
-  afterAll(() => {
+  afterAll((done) => {
     wss.close();
+    client.close();
+    eventProcessor.stop();
+    eventProcessor.removeAllListeners();
+    done();
   });
 
   it('has no clients', () => {
