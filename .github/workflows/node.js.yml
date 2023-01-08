@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  WMATA_API_KEY: 5f0f938c31124818a443a08c84b1dcb1
+  WMATA_API_HOST: https://api.wmata.com/
+
 jobs:
   build:
 
